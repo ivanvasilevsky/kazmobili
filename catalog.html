@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	<link rel="shortcut icon" href="assets/img/icon/favicon.png" type="image/png">
+	
+	<!-- Uselful meta tags -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+	<title>HomePage</title></head>
+<body>
+
+	<div class="page">
+		<div class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__burger" id="burger">
+						<img src="assets/img/icon/burger.svg" alt="" class="header__burger-img">
+					</div>
+		
+					<a href="[[~1]]" class="header__logo">
+						<img src="assets/img/icon/logo.png" alt="" class="header__logo-img">
+					</a>
+		
+					<form action="" class="msearch2 header__search"  method="get" id="mse2_form">
+						<input type="text" class="header__input" name="[[+queryVar]]" placeholder="Поиcк" value="">
+						<button class="header__search-btn"></button>
+					</form>
+		
+					<a href="tel:+7 777 77 77 77" class="header__number">+7 777 77 77 77</a>
+		
+					<a href="" class="header__basket">
+						<div class="header__basket-text">Корзина</div>
+						<div class="header__basket-cart">
+							<img src="assets/img/icon/cart.svg" alt="" class="header__basket-img">
+							<div class="header__basket-count"><strong class="ms2_total_count">1</strong></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="navigation">
+			<div class="container">
+				<div class="navigation__inner">
+					<ul>
+						<li class="left__nav__btn" onmouseover="hoverOnLeft()" onmouseout="hoverOffLeft()" id="left_btn"><a href="">Каталог</a></li>
+						<li><a href="">Акции</a></li>
+						<li><a href="">Новости</a></li>
+						<li class="right__nav__btn" onmouseover="hoverOnRight()" onmouseout="hoverOffRight()" id="right_btn"><a href="">Профиль</a></li>
+					</ul>
+		
+					<div onmouseover="hoverOnLeft()" onmouseout="hoverOffLeft()" id="menu_left" class="navigation__block-left">
+						<div class="navigation__block-item">
+							<img src="assets/img/icon/category_icon_1.png" alt="" class="navigation__block-img">
+							<ul class="navigation__block-title">
+								<li><a href="">Офисные кресла</a></li>
+							</ul>
+							<ul class="navigation__block-subtitle">
+								<li><a href="">Кресла руководителя</a></li>
+							</ul>
+						</div>
+						<div class="navigation__block-item">
+							<img src="assets/img/icon/category_icon_1.png" alt="" class="navigation__block-img">
+							<ul class="navigation__block-title">
+								<li><a href="">Офисные кресла</a></li>
+							</ul>
+							<ul class="navigation__block-subtitle">
+								<li><a href="">Кресла руководителя</a></li>
+							</ul>
+						</div>
+						<div class="navigation__block-item">
+							<img src="assets/img/icon/category_icon_1.png" alt="" class="navigation__block-img">
+							<ul class="navigation__block-title">
+								<li><a href="">Офисные кресла</a></li>
+							</ul>
+							<ul class="navigation__block-subtitle">
+								<li><a href="">Кресла руководителя</a></li>
+							</ul>
+						</div>
+						<div class="navigation__block-item">
+							<img src="assets/img/icon/category_icon_1.png" alt="" class="navigation__block-img">
+							<ul class="navigation__block-title">
+								<li><a href="">Офисные кресла</a></li>
+							</ul>
+							<ul class="navigation__block-subtitle">
+								<li><a href="">Кресла руководителя</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="menu_right" onmouseover="hoverOnRight()" onmouseout="hoverOffRight()"  class="navigation__block-right">
+						<ul>
+							<li><a href="">Личный кабинет</a></li>
+							<li><a href="">Заказы</a></li>
+							<li><a href="">Рассылка</a></li>
+							<li><a href="">Выйти</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="navmob" id="navmob">
+			<img src="assets/img/icon/cross_wt.svg" alt="" class="navmob__cross" id="navmob_cross">
+			<a href="tel:+7 777 77 77 77" class="navmob__number">+7 777 77 77 77</a>
+		
+			<form action="" class="msearch2 navmob__search " method="get" id="mse2_form">
+				<input type="text" class="header__input navmob__input" name="[[+queryVar]]" placeholder="Поиcк" value="">
+				<button class="header__search-btn navmob__header__search-btn"></button>
+			</form>
+		
+			<ul class="navmob__menu">
+				<li><a href="">Каталог</a></li>
+				<li><a href="">Акции</a></li>
+				<li><a href="">Новости</a></li>
+				<li><a href="">Профиль</a></li>
+			</ul>
+		</div>		
+		<div class="bread">
+			<div class="container">
+				<ol class="breadcrumb">
+					<span><a href="">Каталог</a></span>
+					<span><a href="">Офисные кресла</a></span>
+					<span><a class="active" href="">Кресла руководителя</a></span>
+				</ol>
+			</div>
+		</div>
+		
+		<div class="catalog">
+			<div class="container">
+				<div class="catalog__inner">
+					<div class="catalog__left" >
+						<div class="catalog__filter" id="catalogFilter">
+							<div id="catalogFilterBlock" class="catalog__filter-block"></div>
+							<img src="assets/img/icon/arrow_bk.svg" alt="" class="catalog__filter-arrow">
+							<p class="catalog__filter-title">Фильтр</p>
+		
+							<div class="filter__items">
+								<p class="catalog__filter-subtitle">Коллекция</p>
+								<div class="filter__check">
+									<input class="filter__checkbox" type="checkbox" name="zone" id="mse2_msoption|zone_1" value="Область глаз">
+									<label class="filter-check__title " for="mse2_msoption|zone_1">Офисные кресла</label>
+								</div>
+								<div class="filter__check">
+									<input class="filter__checkbox" type="checkbox" name="zone" id="mse2_msoption|zone_1" value="Область глаз">
+									<label class="filter-check__title " for="mse2_msoption|zone_1">Офисные кресла</label>
+								</div>
+							</div>
+							<div class="filter__items">
+								<p class="catalog__filter-subtitle">Коллекция</p>
+								<div class="filter__check">
+									<input class="filter__checkbox" type="checkbox" name="zone" id="mse2_msoption|zone_1" value="Область глаз">
+									<label class="filter-check__title " for="mse2_msoption|zone_1">Офисные кресла</label>
+								</div>
+								<div class="filter__check">
+									<input class="filter__checkbox" type="checkbox" name="zone" id="mse2_msoption|zone_1" value="Область глаз">
+									<label class="filter-check__title " for="mse2_msoption|zone_1">Офисные кресла</label>
+								</div>
+							</div>
+							<div class="filter__items">
+								<p class="catalog__filter-subtitle">Коллекция</p>
+								<div class="filter__check">
+									<input class="filter__checkbox" type="checkbox" name="zone" id="mse2_msoption|zone_1" value="Область глаз">
+									<label class="filter-check__title " for="mse2_msoption|zone_1">Офисные кресла</label>
+								</div>
+								<div class="filter__check">
+									<input class="filter__checkbox" type="checkbox" name="zone" id="mse2_msoption|zone_1" value="Область глаз">
+									<label class="filter-check__title " for="mse2_msoption|zone_1">Офисные кресла</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__grid">
+						<div class="main--card">
+							<img src="assets/img/icon/fivorite.svg" alt="" class="card__fivorite">
+							<div class="card__discount"><span>10%</span></div>
+							<a href="" class="card__link">
+								<img src="assets/img/photo/product_1.jpg" alt="" class="card__img">
+								<h4 class="card__title">Кресло для руководителя MyTurn</h4>
+								<div class="card__bottom">
+									<p class="card__oldprice">12000тг.</p>
+									<p class="card__price">10800тг.</p>
+								</div>
+							</a>
+						</div>				<div class="main--card">
+							<img src="assets/img/icon/fivorite.svg" alt="" class="card__fivorite">
+							<div class="card__discount"><span>10%</span></div>
+							<a href="" class="card__link">
+								<img src="assets/img/photo/product_1.jpg" alt="" class="card__img">
+								<h4 class="card__title">Кресло для руководителя MyTurn</h4>
+								<div class="card__bottom">
+									<p class="card__oldprice">12000тг.</p>
+									<p class="card__price">10800тг.</p>
+								</div>
+							</a>
+						</div>				<div class="main--card">
+							<img src="assets/img/icon/fivorite.svg" alt="" class="card__fivorite">
+							<div class="card__discount"><span>10%</span></div>
+							<a href="" class="card__link">
+								<img src="assets/img/photo/product_1.jpg" alt="" class="card__img">
+								<h4 class="card__title">Кресло для руководителя MyTurn</h4>
+								<div class="card__bottom">
+									<p class="card__oldprice">12000тг.</p>
+									<p class="card__price">10800тг.</p>
+								</div>
+							</a>
+						</div>				<div class="main--card">
+							<img src="assets/img/icon/fivorite.svg" alt="" class="card__fivorite">
+							<div class="card__discount"><span>10%</span></div>
+							<a href="" class="card__link">
+								<img src="assets/img/photo/product_1.jpg" alt="" class="card__img">
+								<h4 class="card__title">Кресло для руководителя MyTurn</h4>
+								<div class="card__bottom">
+									<p class="card__oldprice">12000тг.</p>
+									<p class="card__price">10800тг.</p>
+								</div>
+							</a>
+						</div>				<div class="main--card">
+							<img src="assets/img/icon/fivorite.svg" alt="" class="card__fivorite">
+							<div class="card__discount"><span>10%</span></div>
+							<a href="" class="card__link">
+								<img src="assets/img/photo/product_1.jpg" alt="" class="card__img">
+								<h4 class="card__title">Кресло для руководителя MyTurn</h4>
+								<div class="card__bottom">
+									<p class="card__oldprice">12000тг.</p>
+									<p class="card__price">10800тг.</p>
+								</div>
+							</a>
+						</div>				<div class="main--card">
+							<img src="assets/img/icon/fivorite.svg" alt="" class="card__fivorite">
+							<div class="card__discount"><span>10%</span></div>
+							<a href="" class="card__link">
+								<img src="assets/img/photo/product_1.jpg" alt="" class="card__img">
+								<h4 class="card__title">Кресло для руководителя MyTurn</h4>
+								<div class="card__bottom">
+									<p class="card__oldprice">12000тг.</p>
+									<p class="card__price">10800тг.</p>
+								</div>
+							</a>
+						</div>				<div class="main--card">
+							<img src="assets/img/icon/fivorite.svg" alt="" class="card__fivorite">
+							<div class="card__discount"><span>10%</span></div>
+							<a href="" class="card__link">
+								<img src="assets/img/photo/product_1.jpg" alt="" class="card__img">
+								<h4 class="card__title">Кресло для руководителя MyTurn</h4>
+								<div class="card__bottom">
+									<p class="card__oldprice">12000тг.</p>
+									<p class="card__price">10800тг.</p>
+								</div>
+							</a>
+						</div>			</div>
+				</div>
+			</div>
+		</div>		<div class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__main-title">ТОО K.A.Z. Mobili</div>
+					<div class="footer__col">
+						<div class="footer__title">О компании</div>
+						<ul class="footer__list">
+							<li>Телефон: <span><a href="tel:+7 700 978 9810">+7 700 978 9810</a></span></li>
+							<li>Адрес: <span>Алматы, улица Достык 52/2 офис 516</span></li>
+							<li>E-mail: <span><a href="mailto:sale@kazmobili.kz">sale@kazmobili.kz</a></span></li>
+						</ul>
+					</div>
+					<div class="footer__social">
+						<a href="" class="footer__social-icon">
+							<img src="assets/img/icon/facebook.svg" alt="facebook" >
+						</a>
+						<a href="" class="footer__social-icon">
+							<img src="assets/img/icon/twitter.svg" alt="twitter">
+						</a>
+						<a href="" class="footer__social-icon">
+							<img src="assets/img/icon/telegram.svg" alt="telegram">
+						</a>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Контакты</div>
+						<ul class="footer__list">
+							<li>Телефон: <span><a href="tel:+7 700 978 9810">+7 700 978 9810</a></span></li>
+							<li>Адрес: <span>Алматы, улица Достык 52/2 офис 516</span></li>
+							<li>E-mail: <span><a href="mailto:sale@kazmobili.kz">sale@kazmobili.kz</a></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	</div>
+
+	<script src="assets/js/app.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+</body>
+</html>

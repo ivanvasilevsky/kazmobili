@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	<link rel="shortcut icon" href="assets/img/icon/favicon.png" type="image/png">
+	
+	<!-- Uselful meta tags -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+	<title>HomePage</title></head>
+<body>
+
+	<div class="page">
+		<div class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__burger" id="burger">
+						<img src="assets/img/icon/burger.svg" alt="" class="header__burger-img">
+					</div>
+		
+					<a href="[[~1]]" class="header__logo">
+						<img src="assets/img/icon/logo.png" alt="" class="header__logo-img">
+					</a>
+		
+					<form action="" class="msearch2 header__search"  method="get" id="mse2_form">
+						<input type="text" class="header__input" name="[[+queryVar]]" placeholder="Поиcк" value="">
+						<button class="header__search-btn"></button>
+					</form>
+		
+					<a href="tel:+7 777 77 77 77" class="header__number">+7 777 77 77 77</a>
+		
+					<a href="" class="header__basket">
+						<div class="header__basket-text">Корзина</div>
+						<div class="header__basket-cart">
+							<img src="assets/img/icon/cart.svg" alt="" class="header__basket-img">
+							<div class="header__basket-count"><strong class="ms2_total_count">1</strong></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="navigation">
+			<div class="container">
+				<div class="navigation__inner">
+					<ul>
+						<li class="left__nav__btn" onmouseover="hoverOnLeft()" onmouseout="hoverOffLeft()" id="left_btn"><a href="">Каталог</a></li>
+						<li><a href="">Акции</a></li>
+						<li><a href="">Новости</a></li>
+						<li class="right__nav__btn" onmouseover="hoverOnRight()" onmouseout="hoverOffRight()" id="right_btn"><a href="">Профиль</a></li>
+					</ul>
+		
+					<div onmouseover="hoverOnLeft()" onmouseout="hoverOffLeft()" id="menu_left" class="navigation__block-left">
+						<div class="navigation__block-item">
+							<img src="assets/img/icon/category_icon_1.png" alt="" class="navigation__block-img">
+							<ul class="navigation__block-title">
+								<li><a href="">Офисные кресла</a></li>
+							</ul>
+							<ul class="navigation__block-subtitle">
+								<li><a href="">Кресла руководителя</a></li>
+							</ul>
+						</div>
+						<div class="navigation__block-item">
+							<img src="assets/img/icon/category_icon_1.png" alt="" class="navigation__block-img">
+							<ul class="navigation__block-title">
+								<li><a href="">Офисные кресла</a></li>
+							</ul>
+							<ul class="navigation__block-subtitle">
+								<li><a href="">Кресла руководителя</a></li>
+							</ul>
+						</div>
+						<div class="navigation__block-item">
+							<img src="assets/img/icon/category_icon_1.png" alt="" class="navigation__block-img">
+							<ul class="navigation__block-title">
+								<li><a href="">Офисные кресла</a></li>
+							</ul>
+							<ul class="navigation__block-subtitle">
+								<li><a href="">Кресла руководителя</a></li>
+							</ul>
+						</div>
+						<div class="navigation__block-item">
+							<img src="assets/img/icon/category_icon_1.png" alt="" class="navigation__block-img">
+							<ul class="navigation__block-title">
+								<li><a href="">Офисные кресла</a></li>
+							</ul>
+							<ul class="navigation__block-subtitle">
+								<li><a href="">Кресла руководителя</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="menu_right" onmouseover="hoverOnRight()" onmouseout="hoverOffRight()"  class="navigation__block-right">
+						<ul>
+							<li><a href="">Личный кабинет</a></li>
+							<li><a href="">Заказы</a></li>
+							<li><a href="">Рассылка</a></li>
+							<li><a href="">Выйти</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="navmob" id="navmob">
+			<img src="assets/img/icon/cross_wt.svg" alt="" class="navmob__cross" id="navmob_cross">
+			<a href="tel:+7 777 77 77 77" class="navmob__number">+7 777 77 77 77</a>
+		
+			<form action="" class="msearch2 navmob__search " method="get" id="mse2_form">
+				<input type="text" class="header__input navmob__input" name="[[+queryVar]]" placeholder="Поиcк" value="">
+				<button class="header__search-btn navmob__header__search-btn"></button>
+			</form>
+		
+			<ul class="navmob__menu">
+				<li><a href="">Каталог</a></li>
+				<li><a href="">Акции</a></li>
+				<li><a href="">Новости</a></li>
+				<li><a href="">Профиль</a></li>
+			</ul>
+		</div>		
+		<div class="product">
+			<div class="container">
+				<div class="product__inner">
+					<div class="product__left"></div>
+					<div class="product__right">
+						<h2 class="product__title">Кресло для руководителя MyTurn</h2>
+						<div class="product__buy">
+							<div class="product__coin">
+								<p class="product__oldprice">12000тг.</p>
+								<p class="product__price">10200тг.</p>
+							</div>
+							<button class="btn btn--product">В корзину</button>
+						</div>
+						<div class="product__text">
+							Сиденье: <br>
+							– металлический каркас;<br>
+							– холодная формованная пена-плотность 80 кг / м3.<br>
+		
+							Cпинка:<br>
+							– металлическая внутренняя рама, оснащенная волновыми пружинами;<br>
+							– холодная формованная пена:<br>
+		
+							Механизм<br>
+							Synchro S-регулировка высоты сиденья, механизм синхронизации с возможностью регулировки упругости спинки под вес сидящего человека.<br>
+							Синхромеханизм может быть заблокирован в одном из четырех положений.<br>
+						</div>
+					</div>
+		
+					<div class="configuration">
+						<div class="configuration__top">Выбрать конфигурацию</div>
+					</div>
+					<div class="product__document">
+						<p class="product__document-title">Каталоги и фотоальбомы</p>
+						<div class="product__document-grid">
+							<div class="product__document-item">
+								<img src="assets/img/icon/doc.svg" alt="" class="product__document-img">
+								<div class="product__document-text">
+									<p class="product__document-subtitle">Каталог мягкой мебели</p>
+									<a href="" class="product__document-link" download>Скачать</a>
+								</div>
+							</div>
+							<div class="product__document-item">
+								<img src="assets/img/icon/doc.svg" alt="" class="product__document-img">
+								<div class="product__document-text">
+									<p class="product__document-subtitle">Каталог мягкой мебели</p>
+									<a href="" class="product__document-link" download>Скачать</a>
+								</div>
+							</div>
+							<div class="product__document-item">
+								<img src="assets/img/icon/doc.svg" alt="" class="product__document-img">
+								<div class="product__document-text">
+									<p class="product__document-subtitle">Каталог мягкой мебели</p>
+									<a href="" class="product__document-link" download>Скачать</a>
+								</div>
+							</div>
+							<div class="product__document-item">
+								<img src="assets/img/icon/doc.svg" alt="" class="product__document-img">
+								<div class="product__document-text">
+									<p class="product__document-subtitle">Каталог мягкой мебели</p>
+									<a href="" class="product__document-link" download>Скачать</a>
+								</div>
+							</div>
+							<div class="product__document-item">
+								<img src="assets/img/icon/doc.svg" alt="" class="product__document-img">
+								<div class="product__document-text">
+									<p class="product__document-subtitle">Каталог мягкой мебели</p>
+									<a href="" class="product__document-link" download>Скачать</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><div class="collection">
+			<div class="container">
+				<div class="collection__inner">
+					<h4 class="collection__title">Из коллекции</h4>
+		
+					<div class="collection__slider">
+						<a href="" class="collection__item">
+							<img src="assets/img/photo/collection_1.jpg" alt="" class="collection__item-img">
+						</a>
+						<a href="" class="collection__item">
+							<img src="assets/img/photo/collection_1.jpg" alt="" class="collection__item-img">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>		<div class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__main-title">ТОО K.A.Z. Mobili</div>
+					<div class="footer__col">
+						<div class="footer__title">О компании</div>
+						<ul class="footer__list">
+							<li>Телефон: <span><a href="tel:+7 700 978 9810">+7 700 978 9810</a></span></li>
+							<li>Адрес: <span>Алматы, улица Достык 52/2 офис 516</span></li>
+							<li>E-mail: <span><a href="mailto:sale@kazmobili.kz">sale@kazmobili.kz</a></span></li>
+						</ul>
+					</div>
+					<div class="footer__social">
+						<a href="" class="footer__social-icon">
+							<img src="assets/img/icon/facebook.svg" alt="facebook" >
+						</a>
+						<a href="" class="footer__social-icon">
+							<img src="assets/img/icon/twitter.svg" alt="twitter">
+						</a>
+						<a href="" class="footer__social-icon">
+							<img src="assets/img/icon/telegram.svg" alt="telegram">
+						</a>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Контакты</div>
+						<ul class="footer__list">
+							<li>Телефон: <span><a href="tel:+7 700 978 9810">+7 700 978 9810</a></span></li>
+							<li>Адрес: <span>Алматы, улица Достык 52/2 офис 516</span></li>
+							<li>E-mail: <span><a href="mailto:sale@kazmobili.kz">sale@kazmobili.kz</a></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	</div>
+
+	<script src="assets/js/app.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+</body>
+</html>
